@@ -1,15 +1,14 @@
 import './ExpenseItem.css'
 function ExpenseItem(){
-    return <div className="expense-item">
-        <div className="expense-item__description">
-            Food Rs 10
+    return (
+        <div className="expense-item">
+            <div>march 28th 2021</div>
+            <div className="expense-item__description">
+                <h2>Car Insurance</h2>
+                <div clasName="expense-item__price"></div>
+                <div>$234.6</div>
+            </div>
         </div>
-        <div className="expense-item__description">
-            Petrol Rs 100 
-        </div>
-        <div className="expense-item__description">
-            Movies Rs 200
-        </div>
-        </div>
+    )
 }
 export default ExpenseItem
