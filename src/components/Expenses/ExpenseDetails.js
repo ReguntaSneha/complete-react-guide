@@ -1,5 +1,6 @@
-
-function ExpenseDetails(props){
+import React from 'react';
+import './ExpenseDetails.css';
+const ExpenseDetails=(props)=>{
     return(
         <div>
         <div className="expense-item__description">
