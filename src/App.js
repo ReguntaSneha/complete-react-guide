@@ -1,6 +1,7 @@
 import React from 'react';
-
 import ExpenseItem from './components/Expenses/expenses/ExpenseItem';
+
+
 import NewExpense from './components/NewExpense/NewExpense';
 import './App.css';
 
@@ -30,11 +31,15 @@ const App=()=> {
       location: 'material',
     },
   ];
+  const addExpenseHandler=expense=>{
+    console.log('In App.js');
+    console.log(expenses);
+  };
 
   return (
     <div>
-      <NewExpense/>
-    
+      <NewExpense onAddExpense={addExpenseHandler}/>
+     
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
@@ -59,7 +64,9 @@ const App=()=> {
         date={expenses[3].date}
         location={expenses[3].location}
       />
-    </div>
+       
+    
+      </div>
   );
 }
 
